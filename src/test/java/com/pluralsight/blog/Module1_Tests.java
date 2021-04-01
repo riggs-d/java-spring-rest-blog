@@ -98,7 +98,7 @@ public class Module1_Tests {
         try {
             constructor = DatabaseLoader.class.getDeclaredConstructor(PostRepository.class);
         } catch (NoSuchMethodException e) {
-            //e.printStackTrace();
+            e.printStackTrace();
         }
 
         message = "Task 2: A `DatabaseLoader` constructor with a `PostRepository` parameter does not exist.";

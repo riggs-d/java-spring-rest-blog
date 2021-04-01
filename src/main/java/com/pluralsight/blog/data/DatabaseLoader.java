@@ -22,7 +22,6 @@ public class DatabaseLoader implements ApplicationRunner {
     public List<Author> authors = new ArrayList<>();
 
     private final PostRepository postRepository;
-
     private final AuthorRepository authorRepository;
 
     @Autowired
@@ -56,6 +55,6 @@ public class DatabaseLoader implements ApplicationRunner {
         });
 
         postRepository.saveAll(randomPosts);
-        authorRepository.saveAll(authors); // Update author repository again to update authors with posts
+        authorRepository.saveAll(authors);
     }
 }
